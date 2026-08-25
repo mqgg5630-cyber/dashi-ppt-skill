@@ -36,6 +36,25 @@ Skill 会展示预览让你选择主题，可以随时让 Agent 整套换掉。�
 | <img src="https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme09.jpg" width="440" alt="深蓝杂志风内页预览"><br>**theme09**<br> | <img src="https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme10.jpg" width="440" alt="金色指数风内页预览"><br>**theme10**<br> |
 | <img src="https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme11.jpg" width="440" alt="高能增长风内页预览"><br>**theme11**<br> | <img src="https://github.com/chuspeeism/dashi-ppt-skill/releases/download/readme-assets-v1/theme12.jpg" width="440" alt="声波霓虹风内页预览"><br>**theme12**<br> |
 
+## Google Antigravity 直接调用（MCP + Skill）
+
+本仓库已内置 Antigravity workspace 集成，克隆后打开仓库即可发现：
+
+- `.agents/skills/dashi-ppt/SKILL.md`：Antigravity Skill 入口
+- `.agents/mcp_config.json`：stdio MCP 配置
+- `skills/dashi-ppt/mcp-server.mjs`：无需额外 MCP SDK 的适配器
+
+在 Antigravity 的 Agent 面板打开 MCP 管理，重新加载当前 workspace 配置即可。连接后可以直接让 Agent 调用 `dashi-ppt` 服务完成布局查询、组稿、校验、渲染和 PPTX/PDF 导出。首次渲染前调用 `prepare_dashi_ppt`，它会在 `skills/dashi-ppt/project/` 安装运行时依赖。
+
+```bash
+git clone https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
+cd dashi-ppt-skill
+# 用 Antigravity 打开当前目录，然后在 Agent 中直接说：
+# 使用 dashi-ppt 制作一个关于……的 PPT
+```
+
+如果使用全局 MCP 配置，把 `.agents/mcp_config.json` 中的 `dashi-ppt` 节复制到 `~/.gemini/config/mcp_config.json`，并把 `cwd` 改成仓库绝对路径。不要把含有密钥的配置提交到仓库。
+
 ## 快速开始
 
 **一键安装/更新**：
