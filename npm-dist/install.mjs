@@ -34,6 +34,8 @@ const listOnly = args.includes('--list');
 
 const home = os.homedir();
 const candidates = [
+  // Antigravity shared/global skills (workspace skills live in .agents/skills).
+  path.join(home, '.gemini', 'config', 'skills'),
   path.join(home, '.agents', 'skills'),
   path.join(home, '.claude', 'skills'),
   path.join(home, '.codex', 'skills'),

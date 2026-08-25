@@ -48,6 +48,23 @@ npx dashi-ppt-skill@latest
 npx --registry=https://registry.npmmirror.com dashi-ppt-skill@latest
 ```
 安装和更新是同一条命令,重跑即原地更新(已装依赖自动保留)。
+
+### Google Antigravity：git clone 后直接调用 MCP + Skill
+
+本仓库已经内置 Antigravity 工作区适配，不需要另写 MCP 配置：
+
+- `.agents/skills/dashi-ppt/SKILL.md`：Antigravity 自动发现的 Agent Skill
+- `.agents/mcp_config.json`：自动注册本地 `dashi-ppt` MCP Server
+- `mcp/server.mjs`：无额外运行时依赖的 MCP stdio Server
+
+```bash
+git clone https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
+cd dashi-ppt-skill
+# 用 Antigravity 打开当前目录；它会自动发现 .agents/skills 与 .agents/mcp_config.json
+```
+
+Node.js 20+ 即可启动 MCP；第一次渲染 PPT 时,内置渲染器会在 `skills/dashi-ppt/project/` 安装依赖。若 Antigravity 已经打开,重新加载工作区或在 MCP 管理器中 Reload。MCP 暴露 `dashi_ppt_scaffold`、`dashi_ppt_layout_query`、`dashi_ppt_inspect_layout`、`dashi_ppt_stage_media`、`dashi_ppt_render`、`dashi_ppt_preview`、`dashi_ppt_export` 和 `dashi_ppt_validate`。
+
 让 AI Agent 帮你安装：
 
 ```text
@@ -91,6 +108,7 @@ HTML 版与导出 PPTX 版的逐页对比：
 |------|------|------|
 | Claude Code | 支持 ||
 | Codex | 支持 | 可调用生图能力补充配图 |
+| Google Antigravity | 支持 | git clone 后自动发现 `.agents/skills` 与 `.agents/mcp_config.json`，可直接调用 MCP |
 | 豆包 | 支持 | 需要启动办公模式 |
 | Marvis / Workbuddy / Dumate / Qclaw | 支持 | skill 文件放在任意位置、读取 `SKILL.md` 即可 |
 | Cursor / 其他本地 Agent | 可用 | 需要能读写文件并执行 shell 命令 |

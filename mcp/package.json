@@ -1,0 +1,13 @@
+{
+  "name": "dashi-ppt-mcp",
+  "version": "0.4.11",
+  "private": true,
+  "type": "module",
+  "description": "Dependency-free MCP stdio adapter for Dashi PPT and Google Antigravity.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}

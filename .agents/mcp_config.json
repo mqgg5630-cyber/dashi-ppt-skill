@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "dashi-ppt": {
+      "command": "node",
+      "args": ["mcp/server.mjs"],
+      "cwd": "."
+    }
+  }
+}

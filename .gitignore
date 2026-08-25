@@ -1,0 +1,13 @@
+# Generated decks and local preview state
+output/
+
+# Local MCP/runtime logs and temporary files
+mcp/*.log
+mcp/.tmp/
+
+# Local editor/OS noise
+.DS_Store
+Thumbs.db
+
+# Node dependencies when the bundled renderer is installed in a clone
+node_modules/

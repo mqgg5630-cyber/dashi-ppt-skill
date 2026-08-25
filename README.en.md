@@ -46,6 +46,22 @@ npx dashi-ppt-skill@latest
 
 Use `--dir <path>` to target a specific skills directory (e.g. `--dir ~/.claude/skills`). Install and update are the same command — re-running it updates in place.
 
+### Google Antigravity: direct MCP + Skill from git
+
+This repository includes a native Antigravity workspace adapter:
+
+- `.agents/skills/dashi-ppt/SKILL.md` — auto-discovered Agent Skill
+- `.agents/mcp_config.json` — workspace registration for the local `dashi-ppt` MCP server
+- `mcp/server.mjs` — dependency-free MCP stdio server
+
+```bash
+git clone https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
+cd dashi-ppt-skill
+# Open this directory in Antigravity; it discovers .agents/skills and .agents/mcp_config.json
+```
+
+Node.js 20+ is enough to start the MCP server. The first render installs the bundled renderer dependencies under `skills/dashi-ppt/project/`. If Antigravity was already open, reload the workspace or reload the server from its MCP manager. The server exposes `dashi_ppt_scaffold`, `dashi_ppt_layout_query`, `dashi_ppt_inspect_layout`, `dashi_ppt_stage_media`, `dashi_ppt_render`, `dashi_ppt_preview`, `dashi_ppt_export`, and `dashi_ppt_validate`.
+
 Or hand this to your AI agent:
 
 ```text
@@ -89,6 +105,7 @@ HTML deck vs. exported PPTX, page by page:
 |------|------|------|
 | Claude Code | Supported ||
 | Codex | Supported | Can call image generation to fill visuals |
+| Google Antigravity | Supported | Clone the repo; it auto-discovers `.agents/skills` and `.agents/mcp_config.json` |
 | Doubao | Supported | Requires office mode |
 | Marvis / Workbuddy / Dumate / Qclaw | Supported | Drop the skill anywhere and point them at `SKILL.md` |
 | Cursor / other local agents | Usable | Needs file read/write and shell access |
