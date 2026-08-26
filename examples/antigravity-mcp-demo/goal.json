@@ -1,0 +1,5096 @@
+{
+  "schemaVersion": 2,
+  "variantOutputMode": "comparison",
+  "title": "Dashi PPT × Antigravity",
+  "goal": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+  "themePack": "theme03",
+  "pageCount": 10,
+  "randomSeed": "antigravity-mcp-demo-2026",
+  "workflowRunId": "antigravity-mcp-demo-20260826",
+  "slides": [
+    {
+      "content": {
+        "presentation": {
+          "title": "Dashi PPT × Antigravity",
+          "titleShort": "Dashi PPT × Antigravity",
+          "summary": "从用户需求到可编辑演示文稿的本地 MCP 工作流",
+          "summaryShort": "本地 MCP 工作流 · HTML 编辑 · PPTX 导出",
+          "takeaway": "让 Antigravity 直接调用可编辑的 PPT 生成能力",
+          "items": [
+            {
+              "id": "themes",
+              "label": "内置主题",
+              "value": 12,
+              "displayValue": "12",
+              "unit": "套",
+              "detail": "覆盖科技、研究、数据与增长叙事",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "12",
+              "labelWithValue": "12 · 内置主题",
+              "labelWithSupporting": "内置主题：覆盖科技、研究、数据与增长叙事",
+              "labelWithValueAndSupporting": "12 · 内置主题｜覆盖科技、研究、数据与增长叙事",
+              "chartValue": 12,
+              "chartUnit": "unit:套"
+            },
+            {
+              "id": "layouts",
+              "label": "版式库",
+              "value": 1020,
+              "displayValue": "1,020",
+              "unit": "页",
+              "detail": "按页面角色与内容容量选择",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "1,020",
+              "labelWithValue": "1,020 · 版式库",
+              "labelWithSupporting": "版式库：按页面角色与内容容量选择",
+              "labelWithValueAndSupporting": "1,020 · 版式库｜按页面角色与内容容量选择",
+              "chartValue": 1020,
+              "chartUnit": "unit:页"
+            },
+            {
+              "id": "local",
+              "label": "内容处理",
+              "value": "本地",
+              "displayValue": "本地",
+              "detail": "生成、编辑与导出不上传内容",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "本地",
+              "labelWithValue": "本地 · 内容处理",
+              "labelWithSupporting": "内容处理：生成、编辑与导出不上传内容",
+              "labelWithValueAndSupporting": "本地 · 内容处理｜生成、编辑与导出不上传内容"
+            }
+          ],
+          "coverLabels": [
+            "MCP",
+            "Agent Skill",
+            "Editable PPTX"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "2026",
+          "unit": "",
+          "panelTitle": "Antigravity Edition",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page002",
+          "props": {
+            "itemCount": 0,
+            "stats": [],
+            "statCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "sub": "presentation.summary",
+            "meta": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "select": "labelWithValue"
+            },
+            "eyebrow": "presentation.coverLabels[0]",
+            "titleA": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleB": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleC": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page005",
+          "props": {
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "sub": "presentation.summary",
+            "meta": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "v": "displayValue",
+                "k": "label"
+              }
+            },
+            "eyebrow": "presentation.coverLabels[0]",
+            "titleKicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleA": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleC": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": "presentation.coverLabels[1]",
+            "figureUnit": "presentation.coverLabels[2]",
+            "figureCaption": "presentation.coverLabels[0]"
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page001",
+          "props": {
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "meta": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "select": "labelWithValue"
+            },
+            "eyebrow": "presentation.coverLabels[0]",
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "figureValue": "presentation.coverLabels[1]",
+            "figureUnit": "presentation.coverLabels[2]",
+            "figureLabel": "presentation.coverLabels[0]",
+            "figureCaption": "presentation.coverLabels[1]"
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "cover",
+              "emphasis": "让 Antigravity 直接调用可编辑的 PPT 生成能力",
+              "rationale": "以单一主标题和非对称留白建立主张",
+              "compositionFamily": "hero"
+            },
+            "background": "dark",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 3
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "hero-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 7,
+                  "height": 2
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "hero-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 6,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].text": "presentation.summary",
+            "elements[4].text": "presentation.takeaway"
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "把 PPT 生产变成可调用的工作流",
+          "titleShort": "把 PPT 生产变成可调用的工作流",
+          "summary": "Skill 负责方法与质量边界，MCP 负责把版式、渲染和导出变成工具。",
+          "summaryShort": "Skill 负责方法，MCP 负责执行",
+          "takeaway": "从一次性生成，升级为可复用、可验证、可继续编辑的生产链路。",
+          "items": [
+            {
+              "id": "skill",
+              "label": "Skill",
+              "detail": "告诉 Agent 什么时候用、先做什么、如何验收",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "Skill",
+              "labelWithSupporting": "Skill：告诉 Agent 什么时候用、先做什么、如何验收",
+              "labelWithValueAndSupporting": "Skill｜告诉 Agent 什么时候用、先做什么、如何验收"
+            },
+            {
+              "id": "mcp",
+              "label": "MCP",
+              "detail": "暴露 scaffold、query、render、export 等安全工具",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "MCP",
+              "labelWithSupporting": "MCP：暴露 scaffold、query、render、export 等安全工具",
+              "labelWithValueAndSupporting": "MCP｜暴露 scaffold、query、render、export 等安全工具"
+            },
+            {
+              "id": "artifact",
+              "label": "产物",
+              "detail": "HTML 是编辑器，PPTX 是可继续修改的文件",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "产物",
+              "labelWithSupporting": "产物：HTML 是编辑器，PPTX 是可继续修改的文件",
+              "labelWithValueAndSupporting": "产物｜HTML 是编辑器，PPTX 是可继续修改的文件"
+            }
+          ],
+          "coverLabels": [
+            "Operating Model"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "01",
+          "unit": "",
+          "panelTitle": "Operating Model",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page018",
+          "props": {
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "milestones": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "time": "label",
+                "label": "projectionLabel",
+                "detail": "labelWithSupporting"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 26,
+              "index": 4,
+              "truncate": true
+            },
+            "caseTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 5,
+              "truncate": true
+            },
+            "quoteBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "quoteAttribution": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page007",
+          "props": {
+            "cardCount": 3
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "cards": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "name": "label",
+                "dim": "projectionLabel",
+                "desc": "labelWithSupporting"
+              }
+            },
+            "diagramStyle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "leadTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "leadBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "leadNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page075",
+          "props": {
+            "chipCount": 3,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "statement",
+              "emphasis": "从一次性生成，升级为可复用、可验证、可继续编辑的生产链路。",
+              "rationale": "以大标题、引语和窄栏列表建立杂志式层级",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "editorial-takeaway",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 7,
+                  "height": 5
+                },
+                "tone": "accent",
+                "quote": ""
+              },
+              {
+                "id": "editorial-items",
+                "type": "list",
+                "grid": {
+                  "column": 9,
+                  "row": 4,
+                  "width": 4,
+                  "height": 5
+                },
+                "ordered": false,
+                "tone": "default",
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].quote": "presentation.takeaway",
+            "elements[4].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "一套能力，覆盖从构思到交付",
+          "titleShort": "从构思到交付",
+          "summary": "内置资源让 Agent 先选结构，再填内容，最后统一验收。",
+          "summaryShort": "先选结构，再填内容，最后验收",
+          "takeaway": "规模化的关键不是更多模板，而是让选择和校验可重复。",
+          "items": [
+            {
+              "id": "themes",
+              "label": "视觉主题",
+              "value": 12,
+              "displayValue": "12",
+              "unit": "套",
+              "detail": "按场景切换整套设计语言",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "12",
+              "labelWithValue": "12 · 视觉主题",
+              "labelWithSupporting": "视觉主题：按场景切换整套设计语言",
+              "labelWithValueAndSupporting": "12 · 视觉主题｜按场景切换整套设计语言",
+              "chartValue": 12,
+              "chartUnit": "unit:套"
+            },
+            {
+              "id": "layouts",
+              "label": "版式页面",
+              "value": 1020,
+              "displayValue": "1,020",
+              "unit": "页",
+              "detail": "覆盖 20 类页面角色",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "1,020",
+              "labelWithValue": "1,020 · 版式页面",
+              "labelWithSupporting": "版式页面：覆盖 20 类页面角色",
+              "labelWithValueAndSupporting": "1,020 · 版式页面｜覆盖 20 类页面角色",
+              "chartValue": 1020,
+              "chartUnit": "unit:页"
+            },
+            {
+              "id": "controls",
+              "label": "可调控件",
+              "value": 8576,
+              "displayValue": "8,576",
+              "unit": "个",
+              "detail": "页面内继续调整模块与视觉",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "8,576",
+              "labelWithValue": "8,576 · 可调控件",
+              "labelWithSupporting": "可调控件：页面内继续调整模块与视觉",
+              "labelWithValueAndSupporting": "8,576 · 可调控件｜页面内继续调整模块与视觉",
+              "chartValue": 8576,
+              "chartUnit": "unit:个"
+            },
+            {
+              "id": "variants",
+              "label": "候选方案",
+              "value": 4,
+              "displayValue": "3 + 1",
+              "unit": "种",
+              "detail": "三套模板加一套 Agent 定制方案",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "3 + 1",
+              "labelWithValue": "3 + 1 · 候选方案",
+              "labelWithSupporting": "候选方案：三套模板加一套 Agent 定制方案",
+              "labelWithValueAndSupporting": "3 + 1 · 候选方案｜三套模板加一套 Agent 定制方案",
+              "chartValue": 4,
+              "chartUnit": "unit:种"
+            }
+          ],
+          "coverLabels": [
+            "Capability Map"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "02",
+          "unit": "",
+          "panelTitle": "Capability Map",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page060",
+          "props": {
+            "showCallout": false,
+            "copy": {}
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "data": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "filter": "value-bearing",
+              "limit": 4,
+              "fields": {
+                "label": "label",
+                "amt": "chartValue",
+                "cnt": "chartValue"
+              }
+            },
+            "calloutSegments": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "textFallbackOnly": true,
+              "group": 1,
+              "limit": 1,
+              "fields": {
+                "t": "labelWithValue"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 29,
+              "index": 4,
+              "truncate": true
+            },
+            "titleNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 29,
+              "index": 5,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "copy.t001": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page031",
+          "props": {},
+          "contentMap": {
+            "title": "presentation.title",
+            "data": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "filter": "value-bearing",
+              "group": 3,
+              "limit": 3,
+              "fields": {
+                "label": "labelWithValue",
+                "en": "label",
+                "val": "chartValue",
+                "raise": "chartValue"
+              }
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "supporting-summary"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 29,
+              "index": 4,
+              "truncate": true
+            },
+            "primaryLegend": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "secondaryLegend": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "focusUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "focusRaisePre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "focusRaiseSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 10,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page040",
+          "props": {
+            "stageCount": 4
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "subtitle": "presentation.summary",
+            "stages": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "L": "label",
+                "cn": "projectionLabel",
+                "en": "labelWithValue",
+                "value": "displayValue",
+                "kpi": "projectionTag",
+                "rate": "projectionValue",
+                "note": "labelWithSupporting"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 22,
+              "index": 4,
+              "truncate": true
+            },
+            "panelTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "titleShort",
+                "summaryShort",
+                "takeaway"
+              ],
+              "maxChars": 24,
+              "index": 5,
+              "truncate": true
+            },
+            "ratePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "annotationLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "annotationBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 8,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "metrics",
+              "emphasis": "规模化的关键不是更多模板，而是让选择和校验可重复。",
+              "rationale": "以非对称双栏分离结论与支撑信息",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 5,
+                  "height": 2
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 7,
+                  "width": 5,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-items",
+                "type": "list",
+                "grid": {
+                  "column": 6,
+                  "row": 4,
+                  "width": 7,
+                  "height": 5
+                },
+                "ordered": false,
+                "tone": "default",
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].text": "presentation.summary",
+            "elements[4].text": "presentation.takeaway",
+            "elements[5].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 4
+            }
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "五步完成一份可编辑 PPT",
+          "titleShort": "五步完成可编辑 PPT",
+          "summary": "把需求、内容、结构、渲染和交付拆成清晰的阶段。",
+          "summaryShort": "需求 → 内容 → 结构 → 渲染 → 交付",
+          "takeaway": "每一步都有明确输入与验证点，减少反复试错。",
+          "items": [
+            {
+              "id": "brief",
+              "label": "01 需求",
+              "detail": "明确主题、受众、页数、风格与交付格式",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "01 需求",
+              "labelWithSupporting": "01 需求：明确主题、受众、页数、风格与交付格式",
+              "labelWithValueAndSupporting": "01 需求｜明确主题、受众、页数、风格与交付格式"
+            },
+            {
+              "id": "content",
+              "label": "02 内容",
+              "detail": "冻结每页事实源、标题、结论与关键数字",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "02 内容",
+              "labelWithSupporting": "02 内容：冻结每页事实源、标题、结论与关键数字",
+              "labelWithValueAndSupporting": "02 内容｜冻结每页事实源、标题、结论与关键数字"
+            },
+            {
+              "id": "layout",
+              "label": "03 结构",
+              "detail": "查询容量，选择不重复的版式组合",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "03 结构",
+              "labelWithSupporting": "03 结构：查询容量，选择不重复的版式组合",
+              "labelWithValueAndSupporting": "03 结构｜查询容量，选择不重复的版式组合"
+            }
+          ],
+          "coverLabels": [
+            "Workflow"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "03",
+          "unit": "",
+          "panelTitle": "Workflow",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page076",
+          "props": {
+            "chipCount": 3,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page018",
+          "props": {
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "milestones": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "time": "label",
+                "label": "projectionLabel",
+                "detail": "labelWithSupporting"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 26,
+              "index": 4,
+              "truncate": true
+            },
+            "caseTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 5,
+              "truncate": true
+            },
+            "quoteBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "quoteAttribution": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page006",
+          "props": {
+            "itemCount": 4
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "chapters": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "title": "label",
+                "en": "projectionLabel"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "titlePre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "statement",
+              "emphasis": "每一步都有明确输入与验证点，减少反复试错。",
+              "rationale": "以单一主标题和非对称留白建立主张",
+              "compositionFamily": "hero"
+            },
+            "background": "dark",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 3
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "hero-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 6,
+                  "width": 7,
+                  "height": 2
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "hero-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 6,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].text": "presentation.summary",
+            "elements[4].text": "presentation.takeaway"
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "传统手工制作 vs. Agent 工作流",
+          "titleShort": "手工制作 vs. Agent 工作流",
+          "summary": "两种方式都能完成演示，但复用、验证和修改成本不同。",
+          "summaryShort": "核心差异在复用与验证",
+          "takeaway": "把版式与规则沉淀下来，团队才能持续复用而不是重复劳动。",
+          "items": [
+            {
+              "id": "manual",
+              "label": "手工制作",
+              "detail": "依赖个人经验，结构和视觉难以复用",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "手工制作",
+              "labelWithSupporting": "手工制作：依赖个人经验，结构和视觉难以复用",
+              "labelWithValueAndSupporting": "手工制作｜依赖个人经验，结构和视觉难以复用"
+            },
+            {
+              "id": "agent",
+              "label": "Agent + MCP",
+              "detail": "工具化调用，过程可追踪，产物可再编辑",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "Agent + MCP",
+              "labelWithSupporting": "Agent + MCP：工具化调用，过程可追踪，产物可再编辑",
+              "labelWithValueAndSupporting": "Agent + MCP｜工具化调用，过程可追踪，产物可再编辑"
+            },
+            {
+              "id": "quality",
+              "label": "质量控制",
+              "detail": "从最后人工检查前移到生成过程",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "质量控制",
+              "labelWithSupporting": "质量控制：从最后人工检查前移到生成过程",
+              "labelWithValueAndSupporting": "质量控制｜从最后人工检查前移到生成过程"
+            }
+          ],
+          "coverLabels": [
+            "Why It Matters"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "04",
+          "unit": "",
+          "panelTitle": "Why It Matters",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page006",
+          "props": {
+            "itemCount": 4
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "chapters": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "title": "label",
+                "en": "projectionLabel"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "titlePre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page075",
+          "props": {
+            "chipCount": 3,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page007",
+          "props": {
+            "cardCount": 3
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "cards": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "name": "label",
+                "dim": "projectionLabel",
+                "desc": "labelWithSupporting"
+              }
+            },
+            "diagramStyle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "leadTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "leadBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "leadNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "comparison",
+              "emphasis": "把版式与规则沉淀下来，团队才能持续复用而不是重复劳动。",
+              "rationale": "以二维分区并列展示同层级信息",
+              "compositionFamily": "matrix"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "matrix-cell-1",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 6,
+                  "height": 2
+                },
+                "tone": "accent",
+                "quote": ""
+              },
+              {
+                "id": "matrix-cell-2",
+                "type": "quote",
+                "grid": {
+                  "column": 7,
+                  "row": 4,
+                  "width": 6,
+                  "height": 2
+                },
+                "tone": "default",
+                "quote": ""
+              },
+              {
+                "id": "matrix-cell-3",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 7,
+                  "width": 6,
+                  "height": 2
+                },
+                "tone": "default",
+                "quote": ""
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].quote": "presentation.items[0].labelWithValue",
+            "elements[3].attribution": "presentation.items[0].detail",
+            "elements[4].quote": "presentation.items[1].labelWithValue",
+            "elements[4].attribution": "presentation.items[1].detail",
+            "elements[5].quote": "presentation.items[2].labelWithValue",
+            "elements[5].attribution": "presentation.items[2].detail"
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "自动化程度随着工具链完整度提升",
+          "titleShort": "工具链越完整，自动化越稳定",
+          "summary": "从只会写文案，到能够选版式、渲染、预览和导出，能力逐层叠加。",
+          "summaryShort": "能力沿工具链逐层叠加",
+          "takeaway": "MCP 不是替代设计判断，而是把确定性的执行交给工具。",
+          "items": [
+            {
+              "id": "copy",
+              "label": "文案",
+              "value": 25,
+              "displayValue": "25",
+              "unit": "%",
+              "detail": "完成基础内容组织",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "25",
+              "labelWithValue": "25 · 文案",
+              "labelWithSupporting": "文案：完成基础内容组织",
+              "labelWithValueAndSupporting": "25 · 文案｜完成基础内容组织",
+              "chartValue": 25,
+              "chartUnit": "percent"
+            },
+            {
+              "id": "layout",
+              "label": "版式",
+              "value": 50,
+              "displayValue": "50",
+              "unit": "%",
+              "detail": "加入容量与角色匹配",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "50",
+              "labelWithValue": "50 · 版式",
+              "labelWithSupporting": "版式：加入容量与角色匹配",
+              "labelWithValueAndSupporting": "50 · 版式｜加入容量与角色匹配",
+              "chartValue": 50,
+              "chartUnit": "percent"
+            },
+            {
+              "id": "render",
+              "label": "渲染",
+              "value": 75,
+              "displayValue": "75",
+              "unit": "%",
+              "detail": "产出可离线打开的 HTML",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "75",
+              "labelWithValue": "75 · 渲染",
+              "labelWithSupporting": "渲染：产出可离线打开的 HTML",
+              "labelWithValueAndSupporting": "75 · 渲染｜产出可离线打开的 HTML",
+              "chartValue": 75,
+              "chartUnit": "percent"
+            },
+            {
+              "id": "export",
+              "label": "交付",
+              "value": 100,
+              "displayValue": "100",
+              "unit": "%",
+              "detail": "导出可编辑 PPTX/PDF",
+              "emptyText": "",
+              "focus": false,
+              "valueText": "100",
+              "labelWithValue": "100 · 交付",
+              "labelWithSupporting": "交付：导出可编辑 PPTX/PDF",
+              "labelWithValueAndSupporting": "100 · 交付｜导出可编辑 PPTX/PDF",
+              "chartValue": 100,
+              "chartUnit": "percent"
+            }
+          ],
+          "chartData": [
+            {
+              "id": "copy",
+              "label": "文案",
+              "value": 25,
+              "displayValue": "25%",
+              "unit": "%",
+              "chartUnit": "percent"
+            },
+            {
+              "id": "layout",
+              "label": "版式",
+              "value": 50,
+              "displayValue": "50%",
+              "unit": "%",
+              "chartUnit": "percent"
+            },
+            {
+              "id": "render",
+              "label": "渲染",
+              "value": 75,
+              "displayValue": "75%",
+              "unit": "%",
+              "chartUnit": "percent"
+            },
+            {
+              "id": "export",
+              "label": "交付",
+              "value": 100,
+              "displayValue": "100%",
+              "unit": "%",
+              "chartUnit": "percent"
+            }
+          ],
+          "coverLabels": [
+            "Maturity Curve"
+          ]
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "05",
+          "unit": "",
+          "panelTitle": "Maturity Curve",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page070",
+          "props": {},
+          "contentMap": {
+            "kicker": "presentation.title",
+            "dims": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "filter": "value-bearing",
+              "group": 3,
+              "limit": 3,
+              "fields": {
+                "pct": "chartValue",
+                "label": "labelWithValue",
+                "sub": "labelWithSupporting"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 33,
+              "index": 3,
+              "truncate": true
+            },
+            "titlePre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 27,
+              "index": 6,
+              "truncate": true
+            },
+            "shareLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "calloutPre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "calloutStrong": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 33,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutPost": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 11,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page009",
+          "props": {
+            "itemCount": 4
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "events": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "time": "label",
+                "title": "projectionLabel",
+                "tag": "labelWithValue",
+                "val": "displayValue",
+                "unit": "unit"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 27,
+              "index": 5,
+              "truncate": true
+            },
+            "metaLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "metaPre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 7,
+              "truncate": true
+            },
+            "metaStrong": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "metaPost": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 9,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page008",
+          "props": {},
+          "contentMap": {
+            "kicker": "presentation.title",
+            "data": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "filter": "value-bearing",
+              "limit": 4,
+              "fields": {
+                "label": "label",
+                "amount": "chartValue",
+                "count": "chartValue"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "chartTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 40,
+              "index": 7,
+              "truncate": true
+            },
+            "annotationLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "annotationBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 9,
+              "truncate": true
+            },
+            "primaryLegend": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 10,
+              "truncate": true
+            },
+            "secondaryLegend": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "trend",
+              "emphasis": "MCP 不是替代设计判断，而是把确定性的执行交给工具。",
+              "rationale": "以数据图形作为主视觉并侧置结论",
+              "compositionFamily": "chart-led"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "main-chart",
+                "type": "chart",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 8,
+                  "height": 5
+                },
+                "tone": "accent",
+                "chartType": "bar",
+                "data": [],
+                "showValues": true
+              },
+              {
+                "id": "chart-summary",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 4,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "chart-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 9,
+                  "row": 7,
+                  "width": 4,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].data": {
+              "source": "presentation.chartData",
+              "fields": {
+                "label": "label",
+                "value": "value",
+                "displayValue": "displayValue",
+                "unit": "unit"
+              }
+            },
+            "elements[4].text": "presentation.summary",
+            "elements[5].text": "presentation.takeaway"
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "一个仓库同时承载 Skill、MCP 与运行时",
+          "titleShort": "一个仓库，三层能力",
+          "summary": "Antigravity 读取工作方法，MCP 调用执行工具，Dashi Runtime 负责最终产物。",
+          "summaryShort": "Skill × MCP × Runtime",
+          "takeaway": "代码、规则和交付文件在同一仓库内闭环，降低部署门槛。",
+          "items": [
+            {
+              "id": "skill",
+              "label": ".agents/skills",
+              "detail": "项目级技能说明，按需加载工作流",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": ".agents/skills",
+              "labelWithSupporting": ".agents/skills：项目级技能说明，按需加载工作流",
+              "labelWithValueAndSupporting": ".agents/skills｜项目级技能说明，按需加载工作流"
+            },
+            {
+              "id": "mcp",
+              "label": ".agents/mcp_config.json",
+              "detail": "工作区级 MCP 注册，直接启动本地 Server",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": ".agents/mcp_config.json",
+              "labelWithSupporting": ".agents/mcp_config.json：工作区级 MCP 注册，直接启动本地 Server",
+              "labelWithValueAndSupporting": ".agents/mcp_config.json｜工作区级 MCP 注册，直接启动本地 Server"
+            },
+            {
+              "id": "server",
+              "label": "mcp/server.mjs",
+              "detail": "通过 stdio 暴露版式、渲染与导出工具",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "mcp/server.mjs",
+              "labelWithSupporting": "mcp/server.mjs：通过 stdio 暴露版式、渲染与导出工具",
+              "labelWithValueAndSupporting": "mcp/server.mjs｜通过 stdio 暴露版式、渲染与导出工具"
+            }
+          ],
+          "coverLabels": [
+            "Repository Anatomy"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "06",
+          "unit": "",
+          "panelTitle": "Repository Anatomy",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page007",
+          "props": {
+            "cardCount": 3
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "cards": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "name": "label",
+                "dim": "projectionLabel",
+                "desc": "labelWithSupporting"
+              }
+            },
+            "diagramStyle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "leadTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "leadBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "leadNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page076",
+          "props": {
+            "chipCount": 3,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page018",
+          "props": {
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "milestones": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "time": "label",
+                "label": "projectionLabel",
+                "detail": "labelWithSupporting"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 26,
+              "index": 4,
+              "truncate": true
+            },
+            "caseTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 5,
+              "truncate": true
+            },
+            "quoteBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "quoteAttribution": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "case",
+              "emphasis": "代码、规则和交付文件在同一仓库内闭环，降低部署门槛。",
+              "rationale": "以大标题、引语和窄栏列表建立杂志式层级",
+              "compositionFamily": "editorial"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "editorial-takeaway",
+                "type": "quote",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 7,
+                  "height": 5
+                },
+                "tone": "accent",
+                "quote": ""
+              },
+              {
+                "id": "editorial-items",
+                "type": "list",
+                "grid": {
+                  "column": 9,
+                  "row": 4,
+                  "width": 4,
+                  "height": 5
+                },
+                "ordered": false,
+                "tone": "default",
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].quote": "presentation.takeaway",
+            "elements[4].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "把风险挡在交付之前",
+          "titleShort": "把风险挡在交付之前",
+          "summary": "可编辑并不等于可交付，内容、素材、浏览器和路径都需要检查。",
+          "summaryShort": "可编辑不等于可交付",
+          "takeaway": "用自动化检查守住技术底线，再由人判断叙事是否有效。",
+          "items": [
+            {
+              "id": "copy",
+              "label": "默认文案",
+              "detail": "检查模板占位和与主题无关的残留文本",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "默认文案",
+              "labelWithSupporting": "默认文案：检查模板占位和与主题无关的残留文本",
+              "labelWithValueAndSupporting": "默认文案｜检查模板占位和与主题无关的残留文本"
+            },
+            {
+              "id": "media",
+              "label": "素材路径",
+              "detail": "确保图片已写入 deck，不能依赖原始绝对路径",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "素材路径",
+              "labelWithSupporting": "素材路径：确保图片已写入 deck，不能依赖原始绝对路径",
+              "labelWithValueAndSupporting": "素材路径｜确保图片已写入 deck，不能依赖原始绝对路径"
+            },
+            {
+              "id": "layout",
+              "label": "内容容量",
+              "detail": "根据 fillPlan 控制数组数量和文字长度",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "内容容量",
+              "labelWithSupporting": "内容容量：根据 fillPlan 控制数组数量和文字长度",
+              "labelWithValueAndSupporting": "内容容量｜根据 fillPlan 控制数组数量和文字长度"
+            }
+          ],
+          "coverLabels": [
+            "Quality Gates"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "07",
+          "unit": "",
+          "panelTitle": "Quality Gates",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page075",
+          "props": {
+            "chipCount": 3,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page006",
+          "props": {
+            "itemCount": 4
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "chapters": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "title": "label",
+                "en": "projectionLabel"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "titlePre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page076",
+          "props": {
+            "chipCount": 3,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "risks",
+              "emphasis": "用自动化检查守住技术底线，再由人判断叙事是否有效。",
+              "rationale": "以左右对照保持两组信息的可比性",
+              "compositionFamily": "comparison"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "comparison-left",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 6,
+                  "height": 5
+                },
+                "ordered": false,
+                "tone": "accent",
+                "items": []
+              },
+              {
+                "id": "comparison-right",
+                "type": "list",
+                "grid": {
+                  "column": 7,
+                  "row": 4,
+                  "width": 6,
+                  "height": 5
+                },
+                "ordered": false,
+                "tone": "positive",
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 2
+            },
+            "elements[4].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "offset": 2,
+              "limit": 1
+            }
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "下一步：从一次使用到团队标准",
+          "titleShort": "从一次使用到团队标准",
+          "summary": "先用一个真实汇报场景跑通，再把主题、素材和验收规则沉淀为模板。",
+          "summaryShort": "先跑通，再沉淀为标准",
+          "takeaway": "最小可行路径是：克隆、打开 Antigravity、提出需求、保留源文件。",
+          "items": [
+            {
+              "id": "clone",
+              "label": "立即克隆",
+              "detail": "把仓库放到团队可访问的工作目录",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "立即克隆",
+              "labelWithSupporting": "立即克隆：把仓库放到团队可访问的工作目录",
+              "labelWithValueAndSupporting": "立即克隆｜把仓库放到团队可访问的工作目录"
+            },
+            {
+              "id": "pilot",
+              "label": "选择试点",
+              "detail": "从一份 8–10 页的真实汇报开始",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "选择试点",
+              "labelWithSupporting": "选择试点：从一份 8–10 页的真实汇报开始",
+              "labelWithValueAndSupporting": "选择试点｜从一份 8–10 页的真实汇报开始"
+            },
+            {
+              "id": "review",
+              "label": "复盘规则",
+              "detail": "记录常用主题、版式和内容验收标准",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "复盘规则",
+              "labelWithSupporting": "复盘规则：记录常用主题、版式和内容验收标准",
+              "labelWithValueAndSupporting": "复盘规则｜记录常用主题、版式和内容验收标准"
+            }
+          ],
+          "coverLabels": [
+            "Next Actions"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "08",
+          "unit": "",
+          "panelTitle": "Next Actions",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page006",
+          "props": {
+            "itemCount": 4
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "chapters": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "title": "label",
+                "en": "projectionLabel"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "titlePre": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page018",
+          "props": {
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "title": "presentation.title",
+            "lead": "presentation.summary",
+            "milestones": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "supplementTextFallback": true,
+              "limit": 4,
+              "fields": {
+                "time": "label",
+                "label": "projectionLabel",
+                "detail": "labelWithSupporting"
+              }
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "kicker": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 26,
+              "index": 4,
+              "truncate": true
+            },
+            "caseTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 5,
+              "truncate": true
+            },
+            "quoteBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "quoteAttribution": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page007",
+          "props": {
+            "cardCount": 3
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "cards": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 3,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "name": "label",
+                "dim": "projectionLabel",
+                "desc": "labelWithSupporting"
+              }
+            },
+            "diagramStyle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "leadTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "leadBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "leadNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "actions",
+              "emphasis": "最小可行路径是：克隆、打开 Antigravity、提出需求、保留源文件。",
+              "rationale": "以横向路径串联步骤和行动顺序",
+              "compositionFamily": "process"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "process-items",
+                "type": "list",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 12,
+                  "height": 5
+                },
+                "ordered": true,
+                "tone": "accent",
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "content": {
+        "presentation": {
+          "title": "让每一份 PPT 都可调用、可编辑、可复用",
+          "titleShort": "可调用 · 可编辑 · 可复用",
+          "summary": "Dashi PPT × Antigravity",
+          "summaryShort": "Dashi PPT × Antigravity",
+          "takeaway": "从今天开始，把下一份汇报交给工作流。",
+          "items": [
+            {
+              "id": "start",
+              "label": "Start",
+              "detail": "打开仓库并直接提出你的 PPT 需求",
+              "unit": "",
+              "emptyText": "",
+              "focus": false,
+              "displayValue": "",
+              "valueText": "",
+              "labelWithValue": "Start",
+              "labelWithSupporting": "Start：打开仓库并直接提出你的 PPT 需求",
+              "labelWithValueAndSupporting": "Start｜打开仓库并直接提出你的 PPT 需求"
+            }
+          ],
+          "coverLabels": [
+            "MCP",
+            "Skill",
+            "PPTX"
+          ],
+          "chartData": []
+        },
+        "media": [],
+        "meta": {
+          "brand": "Dashi PPT",
+          "pageLabel": "09",
+          "unit": "",
+          "panelTitle": "Thank You",
+          "date": "",
+          "empty": ""
+        }
+      },
+      "selectedVariant": "v1",
+      "variants": [
+        {
+          "id": "v1",
+          "kind": "template",
+          "layout": "theme03_page076",
+          "props": {
+            "chipCount": 1,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 1,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v2",
+          "kind": "template",
+          "layout": "theme03_page007",
+          "props": {
+            "cardCount": 1
+          },
+          "contentMap": {
+            "kicker": "presentation.titleShort",
+            "cards": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 1,
+              "fields": {
+                "idx": "projectionOrdinal",
+                "name": "label",
+                "dim": "projectionLabel",
+                "desc": "labelWithSupporting"
+              }
+            },
+            "diagramStyle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 3,
+              "truncate": true
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "leadTitle": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "leadBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 6,
+              "truncate": true
+            },
+            "leadNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 24,
+              "index": 7,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v3",
+          "kind": "template",
+          "layout": "theme03_page075",
+          "props": {
+            "chipCount": 1,
+            "images": [],
+            "imageCount": 0
+          },
+          "contentMap": {
+            "kicker": "presentation.title",
+            "lead": "presentation.summary",
+            "chips": {
+              "source": "presentation",
+              "derive": "template-items",
+              "includeTextFallback": true,
+              "limit": 1,
+              "select": "labelWithValue"
+            },
+            "eyebrow": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 24,
+              "index": 3,
+              "truncate": true
+            },
+            "sectorTag": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 4,
+              "truncate": true
+            },
+            "titlePrefix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 5,
+              "truncate": true
+            },
+            "titleAccent": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 6,
+              "truncate": true
+            },
+            "titleSuffix": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 7,
+              "truncate": true
+            },
+            "figureValue": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "takeaway",
+                "summaryShort",
+                "summary",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 8,
+              "truncate": true
+            },
+            "figureUnit": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 18,
+              "index": 9,
+              "truncate": true
+            },
+            "figureCaption": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 20,
+              "index": 10,
+              "truncate": true
+            },
+            "calloutLabel": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "title",
+                "titleShort",
+                "takeaway",
+                "summaryShort"
+              ],
+              "maxChars": 18,
+              "index": 11,
+              "truncate": true
+            },
+            "calloutBody": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 42,
+              "index": 12,
+              "truncate": true
+            },
+            "galleryNote": {
+              "source": "presentation",
+              "derive": "projection-text",
+              "preferred": [
+                "summary",
+                "summaryShort",
+                "takeaway",
+                "titleShort"
+              ],
+              "maxChars": 26,
+              "index": 13,
+              "truncate": true
+            }
+          }
+        },
+        {
+          "id": "v4",
+          "kind": "bespoke",
+          "adjustable": false,
+          "composition": {
+            "designIntent": {
+              "objective": "展示 Dashi PPT 如何通过 Antigravity MCP 和 Agent Skill 生成可编辑 PPT",
+              "audience": "产品、技术与业务团队",
+              "narrativeRole": "closing",
+              "emphasis": "从今天开始，把下一份汇报交给工作流。",
+              "rationale": "以非对称双栏分离结论与支撑信息",
+              "compositionFamily": "split"
+            },
+            "background": "default",
+            "elements": [
+              {
+                "id": "page-kicker",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 1,
+                  "width": 5,
+                  "height": 1
+                },
+                "role": "kicker",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "page-label",
+                "type": "text",
+                "grid": {
+                  "column": 11,
+                  "row": 1,
+                  "width": 2,
+                  "height": 1
+                },
+                "role": "label",
+                "tone": "muted",
+                "align": "right",
+                "text": ""
+              },
+              {
+                "id": "page-title",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 2,
+                  "width": 10,
+                  "height": 2
+                },
+                "role": "title",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-summary",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 4,
+                  "width": 5,
+                  "height": 2
+                },
+                "role": "subtitle",
+                "tone": "default",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-takeaway",
+                "type": "text",
+                "grid": {
+                  "column": 1,
+                  "row": 7,
+                  "width": 5,
+                  "height": 2
+                },
+                "role": "body",
+                "tone": "accent",
+                "align": "left",
+                "text": ""
+              },
+              {
+                "id": "split-items",
+                "type": "list",
+                "grid": {
+                  "column": 6,
+                  "row": 4,
+                  "width": 7,
+                  "height": 5
+                },
+                "ordered": false,
+                "tone": "default",
+                "items": []
+              }
+            ]
+          },
+          "contentMap": {
+            "elements[0].text": "meta.panelTitle",
+            "elements[1].text": "meta.pageLabel",
+            "elements[2].text": "presentation.title",
+            "elements[3].text": "presentation.summary",
+            "elements[4].text": "presentation.takeaway",
+            "elements[5].items": {
+              "source": "presentation.items",
+              "fields": {
+                "title": "labelWithValue",
+                "body": "detail"
+              },
+              "limit": 1
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

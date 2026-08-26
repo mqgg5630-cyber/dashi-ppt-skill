@@ -55,12 +55,14 @@ This repository includes a native Antigravity workspace adapter:
 - `mcp/server.mjs` — dependency-free MCP stdio server
 
 ```bash
-git clone https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
+git clone -b arena/01a038e7-dashi-ppt-skill --single-branch https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
 cd dashi-ppt-skill
 # Open this directory in Antigravity; it discovers .agents/skills and .agents/mcp_config.json
 ```
 
 Node.js 20+ is enough to start the MCP server. The first render installs the bundled renderer dependencies under `skills/dashi-ppt/project/`. If Antigravity was already open, reload the workspace or reload the server from its MCP manager. The server exposes `dashi_ppt_scaffold`, `dashi_ppt_layout_query`, `dashi_ppt_inspect_layout`, `dashi_ppt_stage_media`, `dashi_ppt_render`, `dashi_ppt_preview`, `dashi_ppt_export`, and `dashi_ppt_validate`.
+
+A worked demo deck is checked in under [`examples/antigravity-mcp-demo/`](./examples/antigravity-mcp-demo/), with its `goal.json` source, editable PPTX, and regeneration script.
 
 Or hand this to your AI agent:
 

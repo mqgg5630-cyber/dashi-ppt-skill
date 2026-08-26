@@ -58,12 +58,14 @@ npx --registry=https://registry.npmmirror.com dashi-ppt-skill@latest
 - `mcp/server.mjs`：无额外运行时依赖的 MCP stdio Server
 
 ```bash
-git clone https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
+git clone -b arena/01a038e7-dashi-ppt-skill --single-branch https://github.com/mqgg5630-cyber/dashi-ppt-skill.git
 cd dashi-ppt-skill
 # 用 Antigravity 打开当前目录；它会自动发现 .agents/skills 与 .agents/mcp_config.json
 ```
 
 Node.js 20+ 即可启动 MCP；第一次渲染 PPT 时,内置渲染器会在 `skills/dashi-ppt/project/` 安装依赖。若 Antigravity 已经打开,重新加载工作区或在 MCP 管理器中 Reload。MCP 暴露 `dashi_ppt_scaffold`、`dashi_ppt_layout_query`、`dashi_ppt_inspect_layout`、`dashi_ppt_stage_media`、`dashi_ppt_render`、`dashi_ppt_preview`、`dashi_ppt_export` 和 `dashi_ppt_validate`。
+
+示例演示稿已同步在 [`examples/antigravity-mcp-demo/`](./examples/antigravity-mcp-demo/),包含 `goal.json` 源文件、可编辑 PPTX 和可重新生成的脚本。
 
 让 AI Agent 帮你安装：
 

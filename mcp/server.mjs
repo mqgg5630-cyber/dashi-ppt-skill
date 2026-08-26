@@ -29,7 +29,7 @@ const SKILL_ROOT = path.join(REPO_ROOT, 'skills', 'dashi-ppt');
 const PROJECT_ROOT = path.join(SKILL_ROOT, 'project');
 const VERSION = readRuntimeVersion();
 const MAX_COMMAND_OUTPUT = 16_000;
-const MAX_TOOL_RESULT = 120_000;
+const MAX_TOOL_RESULT = 1_000_000;
 const COMMAND_TIMEOUT_MS = 30 * 60 * 1000;
 const SUPPORTED_PROTOCOL_VERSIONS = [
   '2025-06-18',
@@ -833,7 +833,25 @@ function tail(value, limit = MAX_COMMAND_OUTPUT) {
 function stringifyResult(value) {
   const json = JSON.stringify(value, null, 2);
   if (json.length <= MAX_TOOL_RESULT) return json;
-  return `${json.slice(0, MAX_TOOL_RESULT)}\n... result truncated ...`;
+
+  // Keep tool text valid JSON even when a client asks for a very large layout
+  // result. MCP clients can then parse the response and still use the first
+  // few candidates instead of receiving a cut-off JSON document.
+  if (value && typeof value === 'object' && !Array.isArray(value)) {
+    const clipped = { ...value, truncated: true };
+    for (const key of Object.keys(clipped)) {
+      if (Array.isArray(clipped[key]) && clipped[key].length > 8) {
+        clipped[key] = clipped[key].slice(0, 8);
+      }
+    }
+    let clippedJson = JSON.stringify(clipped, null, 2);
+    if (clippedJson.length <= MAX_TOOL_RESULT) return clippedJson;
+  }
+
+  return JSON.stringify({
+    truncated: true,
+    message: 'The MCP result was too large. Narrow the query with a smaller limit or more specific filters.',
+  });
 }
 
 function formatError(error) {
