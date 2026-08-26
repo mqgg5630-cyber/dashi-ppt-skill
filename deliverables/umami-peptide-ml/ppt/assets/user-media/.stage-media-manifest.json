@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "sourceId": "70fd6c8087d3",
+      "relative": "assets/user-media/peptide-structure.png",
+      "kind": "image",
+      "mime": "image/png"
+    },
+    {
+      "sourceId": "ed286d0009d6",
+      "relative": "assets/user-media/ml-screening.png",
+      "kind": "image",
+      "mime": "image/png"
+    }
+  ]
+}
