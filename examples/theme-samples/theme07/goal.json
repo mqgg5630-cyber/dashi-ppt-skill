@@ -1,0 +1,66 @@
+{
+  "title": "Dashi PPT 主题示例｜theme07",
+  "goal": "展示 theme07 主题下的 Dashi PPT 内容组织、版式选择与可编辑交付",
+  "themePack": "theme07",
+  "pageCount": 8,
+  "randomSeed": "legacy-theme-sample-theme07-2026",
+  "workflowRunId": "theme-sample-theme07-20260827",
+  "slides": [
+    {
+      "layout": "theme07_page003",
+      "props": {
+        "showCrumbs": false
+      }
+    },
+    {
+      "layout": "theme07_page013",
+      "props": {
+        "cardCount": 3,
+        "images": [],
+        "imageCount": 0
+      }
+    },
+    {
+      "layout": "theme07_page019",
+      "props": {
+        "rowCount": 4
+      }
+    },
+    {
+      "layout": "theme07_page007",
+      "props": {
+        "cardCount": 3
+      }
+    },
+    {
+      "layout": "theme07_page071",
+      "props": {
+        "cardCount": 3,
+        "showContact": false,
+        "images": [],
+        "imageCount": 0
+      }
+    },
+    {
+      "layout": "theme07_page031",
+      "props": {
+        "rowCount": 4,
+        "showFlow": false
+      }
+    },
+    {
+      "layout": "theme07_page015",
+      "props": {
+        "itemCount": 3,
+        "conclusionCount": 3
+      }
+    },
+    {
+      "layout": "theme07_page068",
+      "props": {
+        "showKeywords": true,
+        "keywordCount": 2
+      }
+    }
+  ]
+}

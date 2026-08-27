@@ -54,6 +54,18 @@ All MCP paths are relative to the cloned repository. Keep generated decks in `ou
 - Keep media usage unique to one logical slide. Before delivery, check that every referenced asset exists under the rendered deck and that no unrelated default copy remains.
 - Validate the narrative (opening, evidence, conclusion/action), visible copy, chart insights, page count, and output file. A passing script is a technical baseline, not a substitute for checking whether the deck answers the user’s request.
 
+## Checked-in 12-theme samples
+
+`examples/theme-samples/` contains one eight-slide Chinese sample for every bundled theme. The same `briefs.json` content source is paired with each MCP scaffold goal and native editable PPTX. From the repository root, regenerate the goals through the local MCP server and then regenerate and verify the PPTX files with:
+
+```bash
+node examples/theme-samples/scaffold-all.mjs
+node examples/theme-samples/generate-all.mjs
+node examples/theme-samples/verify-all.mjs
+```
+
+The sample PPTX generator keeps text, shapes, lines, and chart-drawing primitives native and uses an offline OOXML fallback when the optional PptxGenJS package is not installed. These checked-in samples use `layout_variants: 1` to make all twelve theme packs comparable; normal user deliveries should still use schema-v2 three-template plus bespoke variants unless the user asks for a single-layout deck.
+
 ## Fallback when MCP is unavailable
 
 The same repository can be used without MCP. Run commands from the repository root:

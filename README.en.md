@@ -64,6 +64,19 @@ Node.js 20+ is enough to start the MCP server. The first render installs the bun
 
 A worked demo deck is checked in under [`examples/antigravity-mcp-demo/`](./examples/antigravity-mcp-demo/), with its `goal.json` source, editable PPTX, and regeneration script.
 
+#### Twelve theme sample templates
+
+The repository also includes one eight-slide Chinese sample deck for every bundled theme, `theme01` through `theme12`. All decks use the same Dashi PPT × Antigravity workflow brief so the visual systems can be compared side by side. Each theme directory keeps its `goal.json`, `goal.fill-plan.json`, and native editable `<theme>-example.pptx`; see [`examples/theme-samples/README.md`](./examples/theme-samples/README.md).
+
+```bash
+cd dashi-ppt-skill
+node examples/theme-samples/scaffold-all.mjs
+node examples/theme-samples/generate-all.mjs
+node examples/theme-samples/verify-all.mjs
+```
+
+`generate-all.mjs` writes `theme01-example.pptx` through `theme12-example.pptx`. Text, shapes, lines, and chart-drawing primitives remain editable; when npm or Chrome is unavailable, the sample generator falls back to the checked-in offline OOXML writer.
+
 Or hand this to your AI agent:
 
 ```text

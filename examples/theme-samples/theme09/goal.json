@@ -1,0 +1,72 @@
+{
+  "title": "Dashi PPT 主题示例｜theme09",
+  "goal": "展示 theme09 主题下的 Dashi PPT 内容组织、版式选择与可编辑交付",
+  "themePack": "theme09",
+  "pageCount": 8,
+  "randomSeed": "legacy-theme-sample-theme09-2026",
+  "workflowRunId": "theme-sample-theme09-20260827",
+  "slides": [
+    {
+      "layout": "theme09_page005",
+      "props": {}
+    },
+    {
+      "layout": "theme09_page101",
+      "props": {
+        "itemCount": 3
+      }
+    },
+    {
+      "layout": "theme09_page075",
+      "props": {
+        "tagCount": 4,
+        "maxH": 0,
+        "images": [],
+        "imgCount": 0
+      }
+    },
+    {
+      "layout": "theme09_page110",
+      "props": {
+        "tagCount": 3,
+        "maxH": 0,
+        "images": [],
+        "imgCount": 0
+      }
+    },
+    {
+      "layout": "theme09_page070",
+      "props": {
+        "tagCount": 3,
+        "images": [],
+        "imgCount": 0
+      }
+    },
+    {
+      "layout": "theme09_page023",
+      "props": {
+        "supportCount": 4
+      }
+    },
+    {
+      "layout": "theme09_page109",
+      "props": {
+        "expCount": 3,
+        "statCount": 0,
+        "stats": [],
+        "skillCount": 0,
+        "skills": [],
+        "infoCount": 0,
+        "infoList": [],
+        "pillCount": 0,
+        "pills": [],
+        "images": [],
+        "imgCount": 0
+      }
+    },
+    {
+      "layout": "theme09_page009",
+      "props": {}
+    }
+  ]
+}

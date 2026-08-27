@@ -1,12 +1,18 @@
 #!/usr/bin/env node
 /**
- * Rebuilds the checked-in editable demo deck from goal.json.
+ * Build a native, editable PowerPoint deck from a Dashi PPT goal scaffold.
  *
- * The Dashi runtime normally exports its HTML deck through a local browser so
- * every HTML node can be reconstructed. This small, dependency-light fallback
- * is kept with the demo source as well: it turns the same canonical copy into
- * native editable PowerPoint text boxes, shapes, and lines when a clone is
- * running without Chrome.
+ * The Dashi runtime goal.json remains the source of truth for the selected
+ * theme-aware layouts. This fallback exporter keeps the same canonical brief
+ * content but draws every visible element as editable PowerPoint text, lines,
+ * shapes, and chart primitives. It is intentionally dependency-light so a
+ * cloned repository can regenerate the samples without Chrome.
+ *
+ * Usage:
+ *   node generate-pptx.mjs --goal <goal.json> --briefs <briefs.json> --out <deck.pptx>
+ *
+ * The original two positional arguments are still supported:
+ *   node generate-pptx.mjs [goal.json] [deck.pptx]
  */
 
 import { createRequire } from 'node:module';
@@ -15,49 +21,131 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const require = createRequire(import.meta.url);
-const PptxGenJS = require('../../skills/dashi-ppt/project/node_modules/pptxgenjs');
+let PptxGenJS;
+try {
+  // Prefer the full library when a clone has installed the runtime packages.
+  PptxGenJS = require('../../skills/dashi-ppt/project/node_modules/pptxgenjs');
+} catch {
+  // The checked-in lite writer keeps sample regeneration usable offline.
+  PptxGenJS = require('./pptxgenjs-lite.cjs');
+}
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const goalPath = path.resolve(process.argv[2] || path.join(HERE, 'goal.json'));
-const outputPath = path.resolve(process.argv[3] || path.join(HERE, 'dashi-ppt-antigravity-mcp-demo.pptx'));
+const REPO_ROOT = path.resolve(HERE, '../..');
+const DEFAULT_GOAL = path.join(HERE, 'goal.json');
+const DEFAULT_OUTPUT = path.join(HERE, 'dashi-ppt-antigravity-mcp-demo.pptx');
+const DEFAULT_BRIEFS = path.join(REPO_ROOT, 'examples/theme-samples/briefs.json');
 
+const THEME_PROFILES = {
+  theme01: {
+    name: '轻拟态风', style: 'soft',
+    colors: { bg: 'EEF0F5', panel: 'FFFFFF', panelAccent: 'E7ECFF', line: 'D7DCE8', text: '2B2B30', muted: '7B7F8C', accent: '5B8DEF', cyan: '46B083', purple: '7A5AE0', warning: 'E0A23A' },
+  },
+  theme02: {
+    name: '炫光紫绿风', style: 'neon',
+    colors: { bg: '110B22', panel: '21183A', panelAccent: '2B274C', line: '4B3B72', text: 'FBF8FF', muted: 'B9A9D4', accent: 'C7FF47', cyan: '69E6FF', purple: 'D78BFF', warning: 'FFBC6B' },
+  },
+  theme03: {
+    name: '深浅代码风', style: 'code',
+    colors: { bg: '08131F', panel: '101F30', panelAccent: '123040', line: '2A4C5F', text: 'EAF7FF', muted: '8EADBE', accent: '7CFFB2', cyan: '7EC8FF', purple: 'C0A8FF', warning: 'FFCB66' },
+  },
+  theme04: {
+    name: '玻璃糖果风', style: 'glass',
+    colors: { bg: 'F7EFF4', panel: 'FFFFFF', panelAccent: 'FDE1EA', line: 'E7CFE0', text: '301E31', muted: '866F85', accent: 'E95078', cyan: '47B8E8', purple: '9A67D3', warning: 'F3A84F' },
+  },
+  theme05: {
+    name: '色谱图表风', style: 'spectrum',
+    colors: { bg: 'F4F7FB', panel: 'FFFFFF', panelAccent: 'EAF3FF', line: 'CED9E8', text: '15263D', muted: '6B7B91', accent: '3A7DFF', cyan: '21B6A8', purple: '7A5CE0', warning: 'F39A3D' },
+  },
+  theme06: {
+    name: '深色图谱风', style: 'graph',
+    colors: { bg: '0B0E17', panel: '151B29', panelAccent: '1D2538', line: '323C58', text: 'F4F6FF', muted: '9AA7C2', accent: 'FFCC4D', cyan: '4FE4FF', purple: '9A83FF', warning: 'FF7C8B' },
+  },
+  theme07: {
+    name: '冷白调研风', style: 'research',
+    colors: { bg: 'F7F9FC', panel: 'FFFFFF', panelAccent: 'EEF4FA', line: 'C9D6E3', text: '1B2C3D', muted: '647485', accent: '2563A8', cyan: '3B82A0', purple: '6977B8', warning: 'B87333' },
+  },
+  theme08: {
+    name: '黑金实验风', style: 'gold',
+    colors: { bg: '090909', panel: '151515', panelAccent: '241E13', line: '4E422E', text: 'F8F0DD', muted: 'AFA48F', accent: 'D8A94A', cyan: 'BCA66A', purple: 'E3C47D', warning: 'E56A3D' },
+  },
+  theme09: {
+    name: '深蓝杂志风', style: 'editorial',
+    colors: { bg: '0A1936', panel: '10254A', panelAccent: '173560', line: '34527C', text: 'F7F4EA', muted: 'A3B3CE', accent: 'FFB14E', cyan: '7ED7E7', purple: 'C7B1FF', warning: 'F4826B' },
+  },
+  theme10: {
+    name: '金色指数风', style: 'index',
+    colors: { bg: 'F2EEE4', panel: 'FFFFFF', panelAccent: 'E9DFC8', line: 'CFC2A7', text: '202B39', muted: '747B83', accent: 'A67520', cyan: '398A9C', purple: '7355A9', warning: 'D95A3A' },
+  },
+  theme11: {
+    name: '高能增长风', style: 'growth',
+    colors: { bg: '17110B', panel: '281A11', panelAccent: '3A2114', line: '6D3A1E', text: 'FFF4E9', muted: 'C3AFA0', accent: 'FF6B3D', cyan: '51D7C1', purple: 'FF8BCB', warning: 'FFD166' },
+  },
+  theme12: {
+    name: '声波霓虹风', style: 'sound',
+    colors: { bg: 'F3E2E6', panel: 'FFFFFF', panelAccent: 'FAD5E5', line: 'DABFCB', text: '211821', muted: '7D7176', accent: 'F15A29', cyan: '3BB6EC', purple: 'C44EE0', warning: 'BAF04F' },
+  },
+};
+
+const positional = [];
+const flags = {};
+for (let i = 0; i < process.argv.slice(2).length; i += 1) {
+  const token = process.argv.slice(2)[i];
+  if (token.startsWith('--')) {
+    const key = token.slice(2).replaceAll('-', '_');
+    const next = process.argv.slice(2)[i + 1];
+    if (next && !next.startsWith('--')) {
+      flags[key] = next;
+      i += 1;
+    } else {
+      flags[key] = true;
+    }
+  } else {
+    positional.push(token);
+  }
+}
+
+const goalPath = path.resolve(flags.goal || positional[0] || DEFAULT_GOAL);
+const outputPath = path.resolve(flags.out || positional[1] || DEFAULT_OUTPUT);
+const briefsPath = flags.briefs ? path.resolve(flags.briefs) : DEFAULT_BRIEFS;
+
+if (!existsSync(goalPath)) throw new Error(`goal.json not found: ${goalPath}`);
+const spec = JSON.parse(readFileSync(goalPath, 'utf8'));
+const briefSource = existsSync(briefsPath) ? JSON.parse(readFileSync(briefsPath, 'utf8')) : [];
+const rawSlides = Array.isArray(spec.slides) ? spec.slides : [];
+if (!rawSlides.length) throw new Error('goal.json contains no slides');
+
+const themeKey = String(flags.theme || spec.themePack || 'theme03');
+const theme = THEME_PROFILES[themeKey];
+if (!theme) throw new Error(`Unknown theme ${themeKey}; expected theme01 through theme12`);
+const C = theme.colors;
 const FONT = {
   head: 'Aptos Display',
   body: 'Aptos',
   mono: 'Aptos Mono',
 };
-const C = {
-  bg: '0B1020',
-  panel: '111A2E',
-  panelAccent: '14283A',
-  line: '263854',
-  text: 'F4F7FB',
-  muted: '9AAAC1',
-  accent: '7CFFB2',
-  cyan: '7EC8FF',
-  purple: 'C0A8FF',
-  warning: 'FFCB66',
-};
 
-if (!existsSync(goalPath)) throw new Error(`goal.json not found: ${goalPath}`);
-const spec = JSON.parse(readFileSync(goalPath, 'utf8'));
-const slides = Array.isArray(spec.slides) ? spec.slides : [];
-if (!slides.length) throw new Error('goal.json contains no slides');
+// Single-variant scaffold goals intentionally keep canonical copy in the
+// shared brief source. If a goal already has frozen content, it wins.
+const slides = rawSlides.map((entry, index) => ({
+  ...(entry || {}),
+  content: entry?.content || briefSource[index]?.content || { presentation: {}, meta: {} },
+}));
 
 const pptx = new PptxGenJS();
 pptx.layout = 'LAYOUT_WIDE';
 pptx.author = 'Dashi PPT';
 pptx.company = 'Dashi PPT';
 pptx.subject = String(spec.goal || spec.title || 'Dashi PPT demo');
-pptx.title = String(spec.title || 'Dashi PPT × Antigravity');
+pptx.title = String(spec.title || `Dashi PPT · ${theme.name}`);
 pptx.lang = 'zh-CN';
 pptx.theme = {
-  headFontFace: 'Aptos Display',
-  bodyFontFace: 'Aptos',
+  headFontFace: FONT.head,
+  bodyFontFace: FONT.body,
   lang: 'zh-CN',
 };
 pptx.defineSlideMaster({
-  title: 'DASHI_DARK',
+  title: 'DASHI_THEME',
   background: { color: C.bg },
   objects: [],
   slideNumber: { x: 12.35, y: 7.08, color: C.muted, fontFace: FONT.body, fontSize: 8 },
@@ -69,7 +157,8 @@ await pptx.writeFile({ fileName: outputPath });
 console.log(`Wrote editable PPTX: ${outputPath}`);
 
 function renderSlide(entry, index) {
-  const slide = pptx.addSlide('DASHI_DARK');
+  const slide = pptx.addSlide('DASHI_THEME');
+  decorateSlide(slide, index, entry);
   const presentation = entry?.content?.presentation || {};
   const meta = entry?.content?.meta || {};
   const items = Array.isArray(presentation.items) ? presentation.items : [];
@@ -118,9 +207,107 @@ function renderSlide(entry, index) {
   }
 }
 
+function decorateSlide(slide, index, entry) {
+  // These are deliberately native primitives rather than screenshots. The
+  // same brief therefore remains editable while each bundled theme gets its
+  // own background treatment, motif, and visual rhythm.
+  switch (theme.style) {
+    case 'soft':
+      addNativeShape(slide, 'ellipse', 10.55, -0.48, 3.2, 2.15, C.purple, 78, null);
+      addNativeShape(slide, 'ellipse', -0.72, 5.88, 2.55, 2.1, C.cyan, 84, null);
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.line, 0.8);
+      break;
+    case 'neon':
+      addNativeShape(slide, 'ellipse', 10.25, -0.62, 3.55, 2.7, C.purple, 72, C.purple, 1.2, 86);
+      addNativeShape(slide, 'ellipse', -0.58, 5.95, 2.4, 1.65, C.accent, 82, C.accent, 1, 82);
+      addLine(slide, 8.85, 0.05, 12.85, 1.18, C.cyan, 2, { transparency: 25 });
+      addLine(slide, 9.3, 0.05, 12.85, 1.04, C.accent, 0.8, { transparency: 35 });
+      break;
+    case 'code':
+      for (let x = 0.55; x < 13.2; x += 0.72) addLine(slide, x, 0.12, x, 6.95, C.line, 0.35, { transparency: 70 });
+      for (let y = 0.48; y < 7.1; y += 0.52) addLine(slide, 0.38, y, 13.08, y, C.line, 0.35, { transparency: 72 });
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.accent, 1.1, { transparency: 25 });
+      break;
+    case 'glass':
+      addNativeShape(slide, 'ellipse', 10.3, -0.38, 3.55, 2.3, C.accent, 82, C.accent, 1, 62);
+      addNativeShape(slide, 'ellipse', -0.55, 5.7, 2.9, 2.25, C.cyan, 86, C.cyan, 1, 70);
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.line, 0.75);
+      break;
+    case 'spectrum':
+      ['3A7DFF', '21B6A8', '7A5CE0', 'F39A3D', 'E95078'].forEach((color, i) => {
+        addNativeShape(slide, 'rect', 0.72 + i * 2.36, 0.18, 2.12, 0.045, color, 0, null);
+      });
+      for (let x = 0.95; x < 13; x += 1.18) addLine(slide, x, 6.6, x, 6.86, C.line, 0.65);
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.line, 0.8);
+      break;
+    case 'graph':
+      for (let x = 0.45; x < 13.2; x += 0.72) addLine(slide, x, 0.12, x, 6.95, C.line, 0.4, { transparency: 62 });
+      for (let y = 0.52; y < 7.1; y += 0.52) addLine(slide, 0.38, y, 13.08, y, C.line, 0.4, { transparency: 64 });
+      addLine(slide, 0.75, 6.92, 12.55, 6.92, C.accent, 1.4);
+      addNativeShape(slide, 'ellipse', 11.92, 0.28, 0.16, 0.16, C.accent, 0, null);
+      break;
+    case 'research':
+      addNativeShape(slide, 'rect', 0.42, 0.2, 0.05, 6.72, C.accent, 0, null);
+      addLine(slide, 0.75, 6.92, 12.55, 6.92, C.line, 0.8);
+      [1.08, 1.32, 1.56].forEach((y, i) => addNativeShape(slide, 'rect', 0.26, y, 0.12, 0.12, [C.accent, C.cyan, C.purple][i], 0, null));
+      break;
+    case 'gold':
+      addLine(slide, 0.48, 0.35, 1.35, 0.35, C.accent, 1.1);
+      addLine(slide, 0.48, 0.35, 0.48, 1.22, C.accent, 1.1);
+      addLine(slide, 12.7, 6.58, 12.7, 7.02, C.accent, 1.1);
+      addLine(slide, 11.85, 7.02, 12.7, 7.02, C.accent, 1.1);
+      addNativeShape(slide, 'ellipse', 10.75, -0.52, 2.7, 2.7, C.accent, 100, C.accent, 1.2, 70);
+      break;
+    case 'editorial':
+      addNativeShape(slide, 'rect', 0.28, 0, 0.18, 7.5, C.accent, 0, null);
+      addNativeShape(slide, 'rect', 12.72, 0, 0.06, 7.5, C.cyan, 0, null);
+      addLine(slide, 0.78, 6.92, 12.55, 6.92, C.line, 0.8);
+      break;
+    case 'index':
+      addLine(slide, 0.72, 0.37, 12.55, 0.37, C.accent, 1.2);
+      for (let x = 0.9; x < 12.5; x += 0.48) addLine(slide, x, 0.37, x, 0.49, C.line, 0.55);
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.line, 0.8);
+      break;
+    case 'growth':
+      addLine(slide, 8.8, 0.02, 13.2, 1.32, C.accent, 5, { transparency: 40 });
+      addLine(slide, 9.48, 0.02, 13.2, 1.12, C.purple, 1.2, { transparency: 25 });
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.accent, 1.4);
+      break;
+    case 'sound':
+      for (let i = 0; i < 6; i += 1) {
+        const x = 10.2 + i * 0.42;
+        const h = 0.22 + (i % 3) * 0.12;
+        addLine(slide, x, 0.72 - h, x, 0.72 + h, i % 2 ? C.accent : C.purple, 2.1, { transparency: 18 });
+      }
+      addNativeShape(slide, 'ellipse', -0.55, 5.82, 2.35, 1.72, C.cyan, 84, C.cyan, 1, 70);
+      addNativeShape(slide, 'ellipse', 11.25, 5.95, 2.05, 1.45, C.purple, 88, C.purple, 1, 72);
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.line, 0.8);
+      break;
+    default:
+      addLine(slide, 0.72, 6.92, 12.55, 6.92, C.line, 0.8);
+  }
+
+  const layout = entry?.layout || entry?.variants?.[0]?.layout || 'native-editable';
+  addText(slide, `${themeKey} · ${layout}`, 0.78, 7.02, 6.5, 0.16, {
+    fontFace: FONT.mono, fontSize: 7, color: C.muted, breakLine: false,
+  });
+  addText(slide, theme.name, 9.4, 7.02, 2.6, 0.16, {
+    fontSize: 7, color: C.muted, align: 'right', breakLine: false,
+  });
+}
+
+function addNativeShape(slide, type, x, y, w, h, fill, transparency = 0, line = null, lineWidth = 0.8, lineTransparency = 0) {
+  const shapeType = type === 'ellipse' ? pptx.ShapeType.ellipse : pptx.ShapeType.rect;
+  slide.addShape(shapeType, {
+    x, y, w, h,
+    fill: { color: fill, transparency },
+    line: { color: line || fill, width: line ? lineWidth : 0, transparency: line ? lineTransparency : 100 },
+  });
+}
+
 function renderCover(slide, presentation, meta) {
-  addText(slide, 'DASHI PPT  /  ANTIGRAVITY EDITION', 0.72, 0.62, 7.2, 0.28, {
-    fontSize: 10, bold: true, color: C.accent, charSpacing: 1.2,
+  addText(slide, `${themeKey.toUpperCase()}  /  ${theme.name}  /  ANTIGRAVITY EDITION`, 0.72, 0.62, 8.1, 0.28, {
+    fontSize: 10, bold: true, color: C.accent, charSpacing: 1.05, breakLine: false,
   });
   addText(slide, String(presentation.title || spec.title), 0.72, 1.22, 7.05, 1.35, {
     fontFace: FONT.head, fontSize: 30, bold: true, color: C.text, breakLine: false,

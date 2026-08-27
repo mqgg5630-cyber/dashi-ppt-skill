@@ -67,6 +67,19 @@ Node.js 20+ 即可启动 MCP；第一次渲染 PPT 时,内置渲染器会在 `sk
 
 示例演示稿已同步在 [`examples/antigravity-mcp-demo/`](./examples/antigravity-mcp-demo/),包含 `goal.json` 源文件、可编辑 PPTX 和可重新生成的脚本。
 
+#### 12 个主题事例模板
+
+仓库还提供 `theme01`–`theme12` 共 12 份 8 页中文事例模板，统一使用 Dashi PPT × Antigravity 工作流示例内容，但分别采用对应主题的视觉系统。每个主题目录保留 `goal.json`、`goal.fill-plan.json` 与原生可编辑 `<theme>-example.pptx`，索引见 [`examples/theme-samples/README.md`](./examples/theme-samples/README.md)。
+
+```bash
+cd dashi-ppt-skill
+node examples/theme-samples/scaffold-all.mjs
+node examples/theme-samples/generate-all.mjs
+node examples/theme-samples/verify-all.mjs
+```
+
+`generate-all.mjs` 会生成 `examples/theme-samples/theme01/theme01-example.pptx` 到 `theme12/theme12-example.pptx`。PPTX 中的文字、形状、线条和图表绘制元素均保持可编辑；无法访问 npm 或 Chrome 时，样例生成器会使用仓库内置的离线 OOXML writer。
+
 让 AI Agent 帮你安装：
 
 ```text

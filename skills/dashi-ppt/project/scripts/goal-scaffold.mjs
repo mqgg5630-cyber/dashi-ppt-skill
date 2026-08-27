@@ -257,7 +257,21 @@ function buildSlides({
     const roleSeed = `${seed}:role:${role}${useMediaIntent ? `:${mediaIntent.field}:${mediaIntent.count}` : ''}`;
 
     let layouts;
-    if (layoutVariants === 1) {
+    if (layoutVariants === 1 && isClosing) {
+      // A legacy single-variant deck still needs a structural closing slide.
+      // The generic pickLayout path queries the literal `closing` role, but
+      // some themes expose the closing composition under `result` or
+      // `statement`; use the same fallback chain as the multi-variant path.
+      layouts = pickClosingLayouts({
+        themePack,
+        used,
+        content,
+        contentShape,
+        count: 1,
+        seed: `${seed}:closing`,
+        allocationState,
+      });
+    } else if (layoutVariants === 1) {
       layouts = [pickLayout({
         themePack,
         role,

@@ -1,0 +1,311 @@
+[
+  {
+    "role": "cover",
+    "content": {
+      "presentation": {
+        "title": "主题预览",
+        "titleShort": "主题预览",
+        "summary": "12 套视觉语言",
+        "summaryShort": "12 套主题",
+        "takeaway": "选择主题，开始制作。",
+        "coverLabels": [
+          "12 THEMES",
+          "EDITABLE HTML",
+          "PPTX EXPORT"
+        ],
+        "items": []
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "2026",
+        "panelTitle": "Dashi PPT"
+      }
+    }
+  },
+  {
+    "role": "statement",
+    "content": {
+      "presentation": {
+        "title": "主题决定第一印象，也决定信息节奏",
+        "titleShort": "主题决定第一印象",
+        "summary": "同一份内容可以用不同视觉语言表达，重点、密度和情绪随主题变化。",
+        "summaryShort": "视觉语言会改变信息节奏",
+        "takeaway": "先选对主题，再让版式服务于内容。",
+        "items": [
+          {
+            "id": "tone",
+            "label": "语气",
+            "detail": "从克制研究到高能增长，先确定表达气质"
+          },
+          {
+            "id": "hierarchy",
+            "label": "层级",
+            "detail": "主题内置标题、指标、图表与留白规则"
+          },
+          {
+            "id": "consistency",
+            "label": "一致性",
+            "detail": "整份 deck 使用同一套视觉系统，减少手工调整"
+          }
+        ]
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "01",
+        "panelTitle": "Design Language"
+      }
+    }
+  },
+  {
+    "role": "metrics",
+    "content": {
+      "presentation": {
+        "title": "内置资源让每一页都有可选方案",
+        "titleShort": "每一页都有可选方案",
+        "summary": "Dashi PPT 将主题、版式和可调控件组合成可复用的页面系统。",
+        "summaryShort": "主题 × 版式 × 控件",
+        "takeaway": "规模化制作的关键，是让选择和调整都可复用。",
+        "items": [
+          {
+            "id": "themes",
+            "label": "主题",
+            "value": 12,
+            "displayValue": "12",
+            "unit": "套",
+            "detail": "覆盖多种业务叙事场景"
+          },
+          {
+            "id": "layouts",
+            "label": "版式",
+            "value": 1020,
+            "displayValue": "1,020",
+            "unit": "页",
+            "detail": "20 类页面角色"
+          },
+          {
+            "id": "controls",
+            "label": "控件",
+            "value": 8576,
+            "displayValue": "8,576",
+            "unit": "个",
+            "detail": "支持布局、数量与配色调整"
+          },
+          {
+            "id": "variants",
+            "label": "候选",
+            "value": 4,
+            "displayValue": "3 + 1",
+            "unit": "种",
+            "detail": "三套模板加一套 Agent 定制方案"
+          }
+        ]
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "02",
+        "panelTitle": "System at a Glance"
+      }
+    }
+  },
+  {
+    "role": "statement",
+    "content": {
+      "presentation": {
+        "title": "从需求到交付，工作流只有五步",
+        "titleShort": "从需求到交付，只有五步",
+        "summary": "明确需求、组织内容、选择结构、渲染预览、导出交付。",
+        "summaryShort": "需求 → 内容 → 结构 → 预览 → 交付",
+        "takeaway": "把复杂制作拆成清晰步骤，团队更容易复用。",
+        "items": [
+          {
+            "id": "brief",
+            "label": "01 需求",
+            "detail": "主题、受众、页数、风格与格式"
+          },
+          {
+            "id": "content",
+            "label": "02 内容",
+            "detail": "每页标题、结论、数字与事实源"
+          },
+          {
+            "id": "deliver",
+            "label": "03–05 交付",
+            "detail": "结构选择、渲染校验与文件导出"
+          }
+        ]
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "03",
+        "panelTitle": "Workflow"
+      }
+    }
+  },
+  {
+    "role": "comparison",
+    "content": {
+      "presentation": {
+        "title": "模板是稳定的起点",
+        "titleShort": "模板是稳定的起点",
+        "summary": "保留系统，释放内容。",
+        "summaryShort": "保留系统，释放内容。",
+        "takeaway": "稳定边界，换来快速迭代。",
+        "items": [
+          {
+            "id": "system",
+            "label": "保留系统",
+            "detail": "字体、色彩、间距和组件保持统一"
+          },
+          {
+            "id": "content",
+            "label": "聚焦内容",
+            "detail": "只替换文案、数据和页面重点"
+          },
+          {
+            "id": "iterate",
+            "label": "快速迭代",
+            "detail": "不满意时可换版式、换主题、再导出"
+          }
+        ]
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "04",
+        "panelTitle": "Template Philosophy"
+      }
+    }
+  },
+  {
+    "role": "trend",
+    "content": {
+      "presentation": {
+        "title": "从内容到成品，自动化逐层增加",
+        "titleShort": "自动化逐层增加",
+        "summary": "查询、渲染、预览和导出让重复性工作交给工具完成。",
+        "summaryShort": "工具承担确定性的执行",
+        "takeaway": "MCP 连接工具，Skill 约束方法，Agent 保留判断。",
+        "items": [
+          {
+            "id": "copy",
+            "label": "内容",
+            "value": 25,
+            "displayValue": "25",
+            "unit": "%",
+            "detail": "组织事实源与叙事"
+          },
+          {
+            "id": "layout",
+            "label": "结构",
+            "value": 50,
+            "displayValue": "50",
+            "unit": "%",
+            "detail": "匹配页面角色与容量"
+          },
+          {
+            "id": "render",
+            "label": "渲染",
+            "value": 75,
+            "displayValue": "75",
+            "unit": "%",
+            "detail": "生成 HTML 编辑器"
+          },
+          {
+            "id": "export",
+            "label": "交付",
+            "value": 100,
+            "displayValue": "100",
+            "unit": "%",
+            "detail": "导出可编辑 PPTX/PDF"
+          }
+        ],
+        "chartData": [
+          {
+            "id": "copy",
+            "label": "内容",
+            "value": 25,
+            "displayValue": "25%",
+            "unit": "%"
+          },
+          {
+            "id": "layout",
+            "label": "结构",
+            "value": 50,
+            "displayValue": "50%",
+            "unit": "%"
+          },
+          {
+            "id": "render",
+            "label": "渲染",
+            "value": 75,
+            "displayValue": "75%",
+            "unit": "%"
+          },
+          {
+            "id": "export",
+            "label": "交付",
+            "value": 100,
+            "displayValue": "100%",
+            "unit": "%"
+          }
+        ]
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "05",
+        "panelTitle": "Automation"
+      }
+    }
+  },
+  {
+    "role": "case",
+    "content": {
+      "presentation": {
+        "title": "一个仓库，完整链路",
+        "titleShort": "一个仓库，完整链路",
+        "summary": "Skill、MCP 与 Runtime 协同工作。",
+        "summaryShort": "Skill × MCP × Runtime",
+        "takeaway": "源文件和成品一起归档，方便交接。",
+        "items": [
+          {
+            "id": "skill",
+            "label": ".agents/skills",
+            "detail": "按需加载的主题与制作规则"
+          },
+          {
+            "id": "mcp",
+            "label": ".agents/mcp_config.json",
+            "detail": "工作区级 MCP 注册文件"
+          },
+          {
+            "id": "runtime",
+            "label": "skills/dashi-ppt",
+            "detail": "主题、版式与渲染运行时"
+          }
+        ]
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "06",
+        "panelTitle": "Repo Map"
+      }
+    }
+  },
+  {
+    "role": "closing",
+    "content": {
+      "presentation": {
+        "title": "下一步",
+        "titleShort": "开始",
+        "summary": "12 个主题 · 一套工作流",
+        "summaryShort": "12 个主题 · 一套工作流",
+        "takeaway": "选择主题，开始制作。",
+        "items": []
+      },
+      "meta": {
+        "brand": "Dashi PPT",
+        "pageLabel": "08",
+        "panelTitle": "Start Here"
+      }
+    }
+  }
+]

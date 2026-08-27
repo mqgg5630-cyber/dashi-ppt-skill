@@ -4,6 +4,9 @@ output/
 # Local MCP/runtime logs and temporary files
 mcp/*.log
 mcp/.tmp/
+examples/theme-samples/theme*/workflow-telemetry.json
+examples/theme-samples/theme*/goal.part-*.json
+examples/theme-samples/theme*/goal.part-*.fill-plan.json
 
 # Local editor/OS noise
 .DS_Store
